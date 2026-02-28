@@ -1,0 +1,15 @@
+[features]
+seeds = true
+skip-lint = false
+idl-build = ["anchor-spl/idl-build"]
+
+[programs.localnet]
+solana_ico = "96fLvxDrkKfkkUw2No8paPdGHMezu2GBayjBfjnXA9rD"
+
+[provider]
+cluster = "Localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+init_ico = "npx ts-node scripts/init_ico.ts"

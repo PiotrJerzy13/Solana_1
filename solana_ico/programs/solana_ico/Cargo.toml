@@ -1,0 +1,21 @@
+[package]
+name = "solana_ico"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "solana_ico"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
+init-if-needed = ["anchor-lang/init-if-needed"]
+
+[dependencies]
+anchor-lang = { version = "0.32.0", features = ["init-if-needed"] }
+anchor-spl = { version = "0.32.0", features = ["associated_token", "token"] }
