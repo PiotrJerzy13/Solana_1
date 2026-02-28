@@ -1,13 +1,7 @@
 *.png
 .vscode/
-# Validator ledger - never commit this
 test-ledger/
-
-# Anchor build artifacts
 target/
-
-# Node modules
 node_modules/
 
-# Deploy keypair - keep this secret!
 target/deploy/solana_ico-keypair.json
