@@ -3,5 +3,4 @@
 test-ledger/
 target/
 node_modules/
-
 target/deploy/solana_ico-keypair.json
